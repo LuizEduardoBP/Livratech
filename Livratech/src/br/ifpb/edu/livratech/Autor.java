@@ -6,7 +6,7 @@ public class Autor {
 	private String nomeAutor;
 	
 	public Integer getIdAutor() {
-		return idAutor;
+		return idAutor; 
 	}
 	public void setIdAutor(Integer idAutor) {
 		this.idAutor = idAutor;
