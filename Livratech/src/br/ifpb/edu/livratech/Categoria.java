@@ -9,10 +9,18 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+@Entity
+@Table(name="CATEGORIA") 
 public class Categoria {
 	@Id
+	@GeneratedValue
+	@Column(name="categoria_id")
 	private Integer idCategoria;
+	
+	@Column(name="categoria_nome")
 	private String nomeCategoria;
+	
+	
 	public Integer getIdCategoria() {
 		return idCategoria;
 	}

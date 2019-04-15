@@ -9,9 +9,17 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+@Entity
+@Table(name="AUTOR") 
 public class Autor {
+	
 	@Id
+	@GeneratedValue
+	@Column(name="autor_id")
 	private Integer idAutor;
+	
+	@Column(name="autor_nome")
 	private String nomeAutor;
 	
 	public Integer getIdAutor() {

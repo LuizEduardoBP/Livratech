@@ -9,10 +9,19 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+@Entity
+@Table(name="AREA")
 public class Area {
+	
 	@Id
+	@GeneratedValue
+	@Column(name="area_id")
 	private Integer idArea;
+	
+	@Column(name="area_nome")
 	private String nomeArea;
+	
 	
 	public Integer getIdArea() {
 		return idArea;

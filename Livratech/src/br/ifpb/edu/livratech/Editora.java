@@ -1,5 +1,6 @@
 package br.ifpb.edu.livratech;
 
+import java.util.ArrayList;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,11 +10,24 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+@Entity
+@Table(name="USUARIO")
 public class Editora {
+	
 	@Id
+	@Column(name="editora_cnpj")
 	private Integer cnpj;
+	
+	@Column(name="editora_nome")
 	private String nomeEditora;
+	
+	@Column(name="editora_edereco")
 	private String Endereco;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	@Column(name="ENDERECO_ID")
+	private ArrayList <Endereco> enderecos;
+	
 	public Integer getCnpj() {
 		return cnpj;
 	}

@@ -10,10 +10,21 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+@Entity
+@Table(name="GERENCIADOR")
 public class Gerenciador {
+	
+	@Id
+	@Column(name="gerenciador_cpf")
 	private Integer cpf;
+	
+	@Column(name="funcionario_nome")
 	private String nomeFuncionario;
+	
+	@Column(name="funcionario_email")
 	private String emailfuncionario;
+	
+	@Column(name="funcionario_senha")
 	private String senha;
 	
 	private ArrayList<Area> areas;
@@ -21,6 +32,8 @@ public class Gerenciador {
 	private ArrayList<Categoria> categorias;
 	private ArrayList<Livro> livros;
 	private ArrayList<Editora> editoras;
+	
+	
 	public Integer getCpf() {
 		return cpf;
 	}

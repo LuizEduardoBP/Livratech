@@ -2,6 +2,7 @@ package br.ifpb.edu.livratech;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,10 +10,19 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+@Embeddable
+@Table(name="ENDERECO")
 public class Endereco {
+	
 	@Id
+	@GeneratedValue
+	@Column(name="endereco_numero")
 	private Integer numero;
+	
+	@Column(name="endereco_rua", nullable = false)
 	private String rua; 
+	
+	@Column(name="endereco_bairro", nullable = false)
 	private String bairro;
 	
 	public Integer getNumero() {

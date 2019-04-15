@@ -10,19 +10,38 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+@Entity
+@Table(name="LIVRO")
 public class Livro {
+	
+	@Id
+	@Column(name="livro_isbn")
 	private Integer isbn;
+	
+	@Column(name="livro_nome")
 	private String nomeLivro;
+	
+	@Column(name="livro_preco")
 	private String preco;
+	
+	@Column(name="livro_resumo")
 	private String resumo;
+	
+	@Column(name="livro_edicao")
 	private Integer edicao;
+	
+	@Column(name="livro_quant")
 	private String quantLivro;
+	
 	
 	private ArrayList<Area> areas;
 	private ArrayList<Autor> autores;
 	private ArrayList<Categoria> categorias;
 	private ArrayList<Livro> livros;
 	private ArrayList<Editora> editoras;
+	
+	
 	public Integer getIsbn() {
 		return isbn;
 	}
