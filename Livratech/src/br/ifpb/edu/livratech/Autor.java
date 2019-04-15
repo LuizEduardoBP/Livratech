@@ -14,7 +14,7 @@ public class Autor {
 	public String getNomeAutor() {
 		return nomeAutor;
 	}
-	public void setNomeAutor(String nomeAutor) {
+	public void setNomeAutor(String nomeAutor) { 
 		this.nomeAutor = nomeAutor;
 	}
 	@Override
