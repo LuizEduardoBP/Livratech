@@ -1,13 +1,13 @@
 package br.ifpb.edu.livratech;
 
 import java.util.ArrayList;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -27,10 +27,24 @@ public class Gerenciador {
 	@Column(name="funcionario_senha")
 	private String senha;
 	
+	@ManyToMany
+	@JoinColumn(name = "area_id")
 	private ArrayList<Area> areas;
+	
+	@ManyToMany
+	@JoinColumn(name = "autor_id")
 	private ArrayList<Autor> autores;
+	
+	@ManyToMany
+	@JoinColumn(name = "categoria_id")
 	private ArrayList<Categoria> categorias;
+	
+	@ManyToMany
+	@JoinColumn(name = "livro_isbn")
 	private ArrayList<Livro> livros;
+	
+	@ManyToOne
+	@JoinColumn(name = "editora_cnpj")
 	private ArrayList<Editora> editoras;
 	
 	
