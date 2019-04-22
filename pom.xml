@@ -4,7 +4,7 @@
   <artifactId>Livratech</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>Livratech/src</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -15,14 +15,5 @@
         </configuration>
       </plugin>
     </plugins>
-    
   </build>
-  <dependencies>
-	  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-	<dependency>
-	    <groupId>javax</groupId>
-	    <artifactId>javaee-api</artifactId>
-	    <version>7.0</version>
-	</dependency>
-  </dependencies>
 </project>
