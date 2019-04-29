@@ -63,7 +63,7 @@ public class Autor {
 	public String toString() {
 		return "Autor [idAutor=" + idAutor + ", nomeAutor=" + nomeAutor + "]";
 	}
-	public Autor(Integer idAutor, String nomeAutor) {
+	public Autor() {
 		super();
 		this.idAutor = idAutor;
 		this.nomeAutor = nomeAutor;

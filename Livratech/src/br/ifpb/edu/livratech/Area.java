@@ -64,7 +64,7 @@ public class Area {
 	public String toString() {
 		return "Area [idArea=" + idArea + ", nomeArea=" + nomeArea + "]";
 	}
-	public Area(Integer idArea, String nomeArea) {
+	public Area() {
 		super();
 		this.idArea = idArea;
 		this.nomeArea = nomeArea;

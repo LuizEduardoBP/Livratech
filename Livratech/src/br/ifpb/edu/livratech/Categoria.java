@@ -64,7 +64,7 @@ public class Categoria {
 	public String toString() {
 		return "Categoria [idCategoria=" + idCategoria + ", nomeCategoria=" + nomeCategoria + "]";
 	}
-	public Categoria(Integer idCategoria, String nomeCategoria) {
+	public Categoria() {
 		super();
 		this.idCategoria = idCategoria;
 		this.nomeCategoria = nomeCategoria;
