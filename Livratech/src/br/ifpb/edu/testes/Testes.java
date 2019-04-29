@@ -16,16 +16,30 @@ import br.ifpb.edu.livratech.Endereco;
 import br.ifpb.edu.livratech.Gerenciador;
 import br.ifpb.edu.interfaces.InterfaceGerenciador;
 
-
 class Testes{
 
 	@Test
 	void adicionarLivro() {
-		InterfaceGerenciador i;
+		InterfaceGerenciador i = null;
 		Livro livro = new Livro(); 
-		Livro l = i.adicionarLivro(livros);
+		Livro l = i.adicionarLivro(livro);
 		assertNotNull(l);
 		assertEquals("livro", l.getNomeLivro());
-		
 	}
+	
+	@Test
+	void adicionarEditora() {
+		InterfaceGerenciador i = null;
+		Editora editora = new Editora(); 
+		Editora e = i.adicionarEditora(editora);
+		assertNotNull(e);
+		assertEquals("livro", e.getNomeEditora());
+	}
+	
+	
+	
+	
+	
+	
+	
 }

@@ -84,11 +84,11 @@ public class Editora {
 	public String toString() {
 		return "Editora [cnpj=" + cnpj + ", nomeEditora=" + nomeEditora + ", Endereco=" + Endereco + "]";
 	}
-	public Editora(Integer cnpj, String nomeEditora, String endereco) {
+	public Editora() {
 		super();
 		this.cnpj = cnpj;
 		this.nomeEditora = nomeEditora;
-		Endereco = endereco;
+		Endereco = getEndereco();
 	}
 }
 

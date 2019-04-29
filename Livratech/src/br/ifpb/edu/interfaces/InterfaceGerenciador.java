@@ -24,50 +24,50 @@ public void consultaPedidos(Pedido pedidos);
 public Livro adicionarLivro(Livro livros);
 
 //adicionar editora ao sistema//
-public Editora adicionar(Editora editoras);
+public Editora adicionarEditora(Editora editoras);
 
 //adicionar uma area de livro ao sistema//
-public Area adicionar(Area areas);
+public Area adicionarArea(Area areas);
 
 //adicionar um autor de livro ao sistema//
-public Autor adicionar(Autor autores);
+public Autor adicionarAutor(Autor autores);
 
 //adicionar categoria de um livro ao sistema//
-public Categoria adicionar(Categoria categoria);
+public Categoria adicionarCategoria(Categoria categoria);
 
 // Remover //
 
 //remover um livro do sistema//
-public Livro remover (Livro livros);
+public Livro removerLivro (Livro livros);
 
 //remover uma editora do sistema//
-public Editora remover (Editora editoras);
+public Editora removerEditora (Editora editoras);
 
 //remover uma area do sistema//
-public Area remover (Area areas);
+public Area removerArea (Area areas);
 
 //remover um autor do sistema//
-public Autor remover (Autor autores);
+public Autor removerAutor (Autor autores);
 
 //remover uma categoria do sistema//
-public Categoria remover (Categoria categoria);
+public Categoria removerCategoria (Categoria categoria);
 
 // Atualizar //
 
 //atualizar um livro do sistema//
-public Livro atualizar (Livro livros);
+public Livro atualizarLivro (Livro livros);
 
 //atualizar uma editora do sistema//
-public Editora atualizar(Editora editoras);
+public Editora atualizarEditora(Editora editoras);
 
 //atualizar uma area do sistema//
-public Area atualizar(Area areas);
+public Area atualizarArea(Area areas);
 
 //atualizar um autor do sistema//
-public Autor atualizar(Autor autores);
+public Autor atualizarAutor(Autor autores);
 
 //atualizar uma categoria do sistema//
-public Categoria atualizar (Categoria categoria);
+public Categoria atualizarCategoria (Categoria categoria);
 
 
 }

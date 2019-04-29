@@ -210,9 +210,7 @@ public class Livro {
 				+ ", edicao=" + edicao + ", quantLivro=" + quantLivro + ", areas=" + areas + ", autores=" + autores
 				+ ", categorias=" + categorias + ", livros=" + livros + ", editoras=" + editoras + "]";
 	}
-	public Livro(Integer isbn, String nomeLivro, String preco, String resumo, Integer edicao, String quantLivro,
-			ArrayList<Area> areas, ArrayList<Autor> autores, ArrayList<Categoria> categorias, ArrayList<Livro> livros,
-			ArrayList<Editora> editoras) {
+	public Livro() {
 		super();
 		this.isbn = isbn;
 		this.nomeLivro = nomeLivro;
